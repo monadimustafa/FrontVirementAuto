@@ -1,0 +1,167 @@
+/* You can add global styles to this file, and also import other style files */
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper{
+  display: flex;
+  background: #d7d7d716;
+}
+
+#main-profil {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.avatar-img{
+  border-radius: 50%;
+  width: 200px;
+
+
+}
+hr.divider{
+
+  border: 1px;
+  border-color: #2B0B6F ;
+  border-style: solid    ;
+  opacity: 1;
+  margin-right: 60%;
+
+
+}
+
+.main-col{
+  flex: 1.4;
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 10%;
+
+}
+
+.side-col{
+  flex: 1;
+
+  padding-bottom: 10%;
+}
+
+
+
+.experience{
+  border-bottom: 3px;
+  border-color: black;
+}
+
+#ul-styling{
+  padding-left: 0rem;
+}
+li{
+  list-style: none;
+}
+
+
+
+.item-container{
+
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.item-padding-container{
+  padding: 10px;
+}
+
+.side-item-col{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+#navbar-me{
+  background-color: #2B0B6F;
+
+}
+#brand{
+  color: white;
+}
+#nav-link{
+  color: white;
+}
+
+
+#red-dvider{
+
+  width: 40%;
+  border: 4px;
+  border-style: solid;
+  opacity: 1;
+  border-color: #ED1A25;
+  border-radius: 50px;
+
+
+}
+#red-dvider-timeline{
+
+
+  border: 4px;
+  border-style: solid;
+  opacity: 1;
+  /* border-color: #2b0b6fb0; */
+  border-color: #2b0b6fc2;
+  border-radius: 50px;
+
+
+}
+
+
+#title-col{
+  display: flex;
+  /* height: 200px; */
+
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#progress-bar-custom-color{
+  background-color: #E0C61F;
+}
+#modal-langue-card{
+  background-color: #d7d7d716;
+}
+
+#update-btn{
+  color: white;
+  background-color: #F0AD4E;
+}
+#add-btn{
+  color: white;
+  background-color: #5CB85C;
+}
+#delete-btn{
+
+  color: white;
+  background-color: #DF4759;
+}
+
+#save-form-modal{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  background-color: #320d8184;
+}
+
+
+#btn-valider{
+
+  padding-left: 100px;
+  padding-right: 100px;
+
+}

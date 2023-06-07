@@ -1,0 +1,33 @@
+<div id="title-logo-row" class="d-flex mt-5 mb-5">
+  <div id="logo-col" class="flex-cloumn col-3 d-flex justify-content-center align-self-start">
+    <img src="./assets/Asset%201.svg" alt="sgsvg" width="200" height="100">
+  </div>
+  <div id="title-col" class="d-flex  col-6 justify-content-end pt-5 ">
+    <h1 >Gestion Virement Automatique</h1>
+    <hr id="red-dvider" >
+  </div>
+</div>
+<div id="progress-row" class="d-flex justify-content-md-center align-items-center ">
+</div>
+<div class="container">
+  <div class="card ">
+    <div class="card-body justify-content-center align-content-center">
+      <div class="wrapper">
+        <div class="side-col">
+              <div *ngIf="secKey.getRole()=='CA'">
+                <h5>Charger d'accueil</h5>
+                <app-form-ca></app-form-ca>
+              </div>
+              <div *ngIf="secKey.getRole()=='uma_authorization'">
+
+                <app-task-approbateur></app-task-approbateur>
+              </div>
+              <div *ngIf="secKey.getRole()=='GC'">
+                <h5>Gesionnaire de Compte</h5>
+                <app-task-gest></app-task-gest>
+              </div>
+            </div>
+    </div>
+  </div>
+</div>
+  </div>

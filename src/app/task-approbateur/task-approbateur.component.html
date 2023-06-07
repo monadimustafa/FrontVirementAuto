@@ -1,0 +1,48 @@
+<!--  <div class="card col-12">
+
+<div class="card-body">
+
+</div>
+</div>-->
+<div class=" text-center mt-4 mb-4">
+  <h3 >List Virement Automatique Confirmée par Gestionnaire</h3>
+</div>
+<table class="table table-striped mt-4 ">
+  <thead>
+  <tr>
+    <th scope="col">initiateur</th>
+    <th scope="col">id_client</th>
+    <th scope="col">num_compte</th>
+    <th scope="col">nom</th>
+    <th scope="col">mnt_total</th>
+    <th scope="col">date Virement</th>
+    <th scope="col">Bénificiare</th>
+    <th scope="col">Sign & Cachet</th>
+    <th scope="col">Piece Jointe</th>
+    <th scope="col">Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let lvac of listVaConf">
+    <td>{{lvac.initiateur}}</td>
+    <td>{{lvac.id_client}}</td>
+    <td>{{lvac.num_compte}}</td>
+    <td>{{lvac.nom}}</td>
+    <td>{{lvac.mon_total}}</td>
+    <td>{{lvac.dateVir | date }}</td>
+    <td>{{lvac.nbr_oper}}</td>
+    <td>{{lvac.conforme}}</td>
+    <td><i class="bi-file-pdf"></i></td>
+    <td class="d-flex">
+      <button class="btn btn-success btn-sm" (click)="valideVa(lvac.id,lvac)">
+        <i class="bi-check "></i>
+      </button>
+      <button class="btn btn-danger btn-sm ms-2" (click)="rejeteVa(lvac.id,lvac)">
+        <i class="bi-trash-fill"></i>
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
